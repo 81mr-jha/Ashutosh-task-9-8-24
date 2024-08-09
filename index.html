@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9-8-24</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="photo">Photo:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="rank">Rank:</label>
+                    <select id="rank" name="rank" required>
+                        <option value="">Select your rank</option>
+                        <option value="First Rank">First Rank</option>
+                        <option value="Second Rank">Second Rank</option>
+                        <option value="Third Rank">Third Rank</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="idNumber">ID Number:</label>
+                    <input type="text" id="idNumber" name="idNumber" readonly>
+                </div>
+
+                <button type="submit" class="btn">Generate PDF/Image</button>
+            </form>
+        </main>
+
+        <div id="output" class="output">
+            <div class="output-header">
+                <img id="outputPhoto" src="" alt="User Photo">
+                <div class="output-details">
+                    <p><strong>ID:</strong> <span id="outputIdNumber"></span></p>
+                    <p><strong>User Name:</strong> <span id="outputName"></span></p>
+                </div>
+            </div>
+            <p class="congratulations">Congratulations!! You have secured <strong><span id="outputRank"></span></strong></p>
+            <button id="downloadBtn" class="btn" style="display:none;">Download PDF</button>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

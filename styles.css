@@ -1,0 +1,155 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 20px;
+    color: #333;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.header .logo {
+    height: 50px;
+}
+
+.header-text h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+main h1 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+main p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+ol {
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="file"],
+select {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+select {
+    appearance: none;
+    background-color: #fff;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+.output {
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.output-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.output img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+
+.output-details {
+    flex-grow: 1;
+}
+
+.output-details p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.congratulations {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 10px;
+    /* color: #0056b3; */
+    color: #333;
+}
+
+#outputRank{
+    font-size: 1rem;
+}
